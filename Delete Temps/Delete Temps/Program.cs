@@ -16,21 +16,23 @@ namespace Delete_Temps
                 Console.Write("Press write  Delete =");
             string str2= Console.ReadLine();
            string str1 = "Delete";
+            DirectoryInfo di = new DirectoryInfo(@"C:\Users\Anahit\Desktop\Desctop\temps\");
 
-           
-            if (str1==str2)
-                                 
+            try
             {
-                DirectoryInfo di = new DirectoryInfo(@"C:\Users\Anahit\Desktop\Desctop\temps");
+                if (str1 == str2)
 
-                FileInfo[] arr = di.GetFiles();
-                foreach (FileInfo file in arr)
                 {
-                    file.Delete();
+                    FileInfo[] arr = di.GetFiles();
+                    foreach (FileInfo file in arr)
+                    {
+                        file.Delete();
+                    }
                 }
-
-
-
+            }
+            catch
+            {
+                throw new FieldAccessException();
             }
         }
     }
