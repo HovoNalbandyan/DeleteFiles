@@ -21,7 +21,7 @@ namespace Delete_Temps
             if (str1==str2)
                                  
             {
-                DirectoryInfo di = new DirectoryInfo(@"C:\Users\Anahit\Desktop\Desctop\");
+                DirectoryInfo di = new DirectoryInfo(@"C:\Users\Anahit\Desktop\Desctop\temps");
 
                 FileInfo[] arr = di.GetFiles();
                 foreach (FileInfo file in arr)
