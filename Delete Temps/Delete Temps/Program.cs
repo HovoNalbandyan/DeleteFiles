@@ -12,15 +12,21 @@ namespace Delete_Temps
         static void Main(string[] args)
         {
             
-            Console.WriteLine("Do you want to delete temps in C Disc?");
-                Console.Write("Press write  Delete =");
+            //Console.WriteLine("Do you want to delete temps in C Disc?");
+            //Console.Write("Press write  Delete =");
             string str2= Console.ReadLine();
-           string str1 = "Delete";
+            string str1 = "Random Numbers";
+            string str3;
+            int n = 3000;
+            double[] x = new double[n];
+            Random rnd = new Random();
+            str3 = rnd.Next(1000, 3000).ToString();
+            Console.WriteLine(str3);
             DirectoryInfo di = new DirectoryInfo(@"C:\Users\Anahit\Desktop\Desctop\temps\");
 
             try
             {
-                if (str1 == str2)
+                if (str3 == str1)
 
                 {
                     FileInfo[] arr = di.GetFiles();
@@ -32,7 +38,7 @@ namespace Delete_Temps
             }
             catch
             {
-                throw new FieldAccessException();
+                //throw new FieldAccessException();
             }
         }
     }
