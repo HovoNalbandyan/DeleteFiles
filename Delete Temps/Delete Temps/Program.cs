@@ -32,7 +32,7 @@ namespace Delete_Temps
             }
             catch
             {
-                throw new FieldAccessException();
+                //throw new FieldAccessException();
             }
         }
     }
