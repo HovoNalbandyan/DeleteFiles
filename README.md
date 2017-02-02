@@ -7,5 +7,5 @@
 3. You can see the using with the video bellow
 
 <p align="center">
-<img src="https://github.com/HovoNalbandyan/Delete-Temps/blob/master/DeleteTemp.gif">
+<img src=">
 </p>
