@@ -37,17 +37,17 @@ namespace Delete_Temps
                     {
                         file.Delete();
                     }
+                    MessageBox.Show("File Deleted");
                 }
-
+                else
+                    MessageBox.Show("Input Right Random Password");
             }
             catch
             {
                 throw new Exception("Input Rigt Random Password");
 
             }
-
-
-           
+                    
             
             
 
@@ -63,7 +63,10 @@ namespace Delete_Temps
                 Random rnd = new Random();
                 textBox3.Text = rnd.Next(1000, 3000).ToString();
             }
-
+            else
+            {
+                return;
+                    }
         }     
 
         private void textBox2_TextChanged(object sender, EventArgs e)
