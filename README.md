@@ -1,4 +1,4 @@
-# This Program delete temp files from yours computer<br>
+# The Program Delete Files in Folder On Your Computer<br>
 
 
 ###Instruction<br>
