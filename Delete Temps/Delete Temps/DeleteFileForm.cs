@@ -30,7 +30,7 @@ namespace Delete_Temps
             DirectoryInfo di = new DirectoryInfo(path);
             try
             {
-                if (textBox3.Text == textBox2.Text)
+                if (textBox3.Text == textBox2.Text) //input text and random text
                 {
                     FileInfo[] arr = di.GetFiles();
                     foreach (FileInfo file in arr)
@@ -45,12 +45,8 @@ namespace Delete_Temps
             catch
             {
                 throw new Exception("Input Rigt Random Password");
-
             }
-                    
-            
-            
-
+           
         }
         string path;
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -59,9 +55,9 @@ namespace Delete_Temps
             path = textBox1.Text;
             if (path != null)
             {
-                double[] x = new double[3000];
-                Random rnd = new Random();
-                textBox3.Text = rnd.Next(1000, 3000).ToString();
+                double[] x = new double[3000];//Create array length(0-3000)
+                Random rnd = new Random();//Random Function
+                textBox3.Text = rnd.Next(1000, 3000).ToString();//Random Generate
             }
             else
             {
@@ -71,18 +67,10 @@ namespace Delete_Temps
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
-
-
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         { 
-            //random generator
-           
-
-
-
         }
 
     }
